@@ -16,6 +16,6 @@ def edit(request, number):
     return HttpResponse(f'<h4>Editar el blog {number}</h1>')
 def destroy(request, number):
     return redirect('/blogs')
-def jres(request):
+def responseJson(request):
     data = [{'titulo': 'Nombre_Blog', 'Numero_Blog': '1'}, {'titulo': 'lineas', 'parrafo': '3'}]
     return JsonResponse({'data': data})

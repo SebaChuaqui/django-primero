@@ -7,5 +7,5 @@ urlpatterns = [
     path('blogs/new/create', views.create),
     path('blogs/<int:number>/edit', views.show),
     path('blogs/<int:number>/delete', views.destroy),
-    path('blogs/json', views.jres),
+    path('blogs/json', views.responseJson),
 ]
